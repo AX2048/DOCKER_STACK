@@ -2,5 +2,5 @@ _DRAFT.txt
 /**/*.bak
 /**/*.old
 
-certbot/www/
-certbot/conf/
+certbot/www/*
+certbot/conf/*
