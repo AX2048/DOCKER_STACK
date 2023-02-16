@@ -19,9 +19,11 @@ services:
     depends_on:
      - web
      - ahab
+     - ishmael
     links:
      - web
      - ahab
+     - ishmael
     ports:
      - "80:80"
      - "443:443"
