@@ -1,0 +1,6 @@
+_DRAFT.txt
+/**/*.bak
+/**/*.old
+
+certbot/www/*
+certbot/conf/*
