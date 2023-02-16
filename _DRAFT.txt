@@ -1,0 +1,45 @@
+
+uvicorn.ponomarev-aa.ru
+
+62.113.97.245
+
+62.113.97.245:8080
+
+py1.ponomarev-aa.ru
+
+ponomero@szbewcktse:~$ dig a +short py1.ponomarev-aa.ru
+62.113.97.245
+ponomero@szbewcktse:~$ dig a +short www.py1.ponomarev-aa.ru
+62.113.97.245
+
+
+---
+
+docker compose run --rm  certbot certonly --webroot --webroot-path /var/www/certbot/ -d uvicorn.ponomarev-aa.ru
+
+---
+
+ponomero@szbewcktse:~/DOCKER_STAK$ docker compose run --rm  certbot certonly --webroot --webroot-path /var/www/certbot/ -d uvicorn.ponomarev-aa.ru
+Saving debug log to /var/log/letsencrypt/letsencrypt.log
+Requesting a certificate for uvicorn.ponomarev-aa.ru
+
+Successfully received certificate.
+Certificate is saved at: /etc/letsencrypt/live/uvicorn.ponomarev-aa.ru/fullchain.pem
+Key is saved at:         /etc/letsencrypt/live/uvicorn.ponomarev-aa.ru/privkey.pem
+This certificate expires on 2023-05-17.
+These files will be updated when the certificate renews.
+
+NEXT STEPS:
+- The certificate will need to be renewed before it expires. Certbot can automatically renew the certificate in the background, but you may need to take steps to enable that functionality. See https://certbot.org/renewal-setup for instructions.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+If you like Certbot, please consider supporting our work by:
+ * Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
+ * Donating to EFF:                    https://eff.org/donate-le
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+---
+
+docker_stak-certbot-1  | Certbot doesn't know how to automatically configure the web server on this system. However, it can still get a certificate for you. Please run "certbot certonly" to do so. You'll need to manually configure your web server to use the resulting certificate.
+
+---
