@@ -1,5 +1,6 @@
 ## DOCKER_STACK
 
+NGINX + CERTBOT | DJANGO & UVICORN
 ---
 
 http://uvicorn.ponomarev-aa.ru
@@ -32,3 +33,7 @@ Create:
 
 HTTPS using Nginx and Let's encrypt in Docker
 https://mindsers.blog/post/https-using-nginx-certbot-docker/
+
+---
+
+Сервер может быть не запущен, но у тебя поучится запустить всё самому)
