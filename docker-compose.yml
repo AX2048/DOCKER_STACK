@@ -5,7 +5,7 @@ services:
      - ":80"
 
   ahab:
-    image: alex501020/ahab
+    image: alex501020/ahab:dev
     ports:
      - ":80"
 
